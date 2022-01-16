@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+      </style
+    </style>
+  </head>
+  <body>
+    <form action="/form/" method="POST">
+      {% csrf_token %}
+      <table style="width: 50%">
+        <tr>
+          <th>Description</th>
+          <th>Remarks</th>
+        </tr>
+        <tr>
+          <td>Hello World!</td>
+          <td>{{form}}</td>
+        </tr>
+      </table>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

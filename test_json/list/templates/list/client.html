@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+</style
+</style>
+</head>
+<body>
+
+<ul>
+    {% for list in list_view %}
+        <li>{{list.profile_json.pallet}}</list>
+    {% endfor %}
+</ul>
+
+<table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Email</th> 
+    <th>Age</th>
+  </tr>
+  {% for list in list_view %}
+  <tr>
+        <td>{{list.profile_json.Yusuf}}</td>
+        <td>{{list.profile_json.Abdullah}}</td>
+        <td>{{list.profile_json.remark}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
